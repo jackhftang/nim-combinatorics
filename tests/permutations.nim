@@ -42,7 +42,7 @@ test "permutations(*) iterator":
       check not s.contains(h)
       s.incl(h) 
     # check exactly l! unique number of permutations
-    assert len(s) == fac(l)
+    check len(s) == fac(l)
 
 test "permutationsWithReplacement(['a', 'b', 'c'], 2)":
   var result = permutationsWithReplacement(['a', 'b', 'c'], 2)
